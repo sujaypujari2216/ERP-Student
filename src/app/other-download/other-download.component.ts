@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatatableService } from '../shared/datatable-service/datatable.service';
 
 @Component({
   selector: 'app-other-download',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OtherDownloadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private datatableservice:DatatableService) { }
 
   ngOnInit(): void {
+    this.datatableservice.initTable("Other Downloads");
   }
+
 
 }

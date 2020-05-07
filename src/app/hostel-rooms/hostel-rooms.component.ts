@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatatableService } from '../shared/datatable-service/datatable.service';
 
 @Component({
   selector: 'app-hostel-rooms',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HostelRoomsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private datatableservice:DatatableService) { }
 
   ngOnInit(): void {
+    this.datatableservice.initTable("Hostel Rooms");
   }
 
 }

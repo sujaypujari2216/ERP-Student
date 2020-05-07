@@ -22,6 +22,8 @@ import { BooksComponent } from './books/books.component';
 import { BookIssuedComponent } from './book-issued/book-issued.component';
 import { TransportRoutesComponent } from './transport-routes/transport-routes.component';
 import { HostelRoomsComponent } from './hostel-rooms/hostel-rooms.component';
+import { DemoComponent } from './demo/demo.component';
+import { DatatableService } from './shared/datatable-service/datatable.service';
 
 @NgModule({
   declarations: [
@@ -44,13 +46,14 @@ import { HostelRoomsComponent } from './hostel-rooms/hostel-rooms.component';
     BooksComponent,
     BookIssuedComponent,
     TransportRoutesComponent,
-    HostelRoomsComponent
+    HostelRoomsComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DatatableService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

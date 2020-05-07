@@ -19,6 +19,7 @@ import { BooksComponent } from './books/books.component';
 import { BookIssuedComponent } from './book-issued/book-issued.component';
 import { TransportRoutesComponent } from './transport-routes/transport-routes.component';
 import { HostelRoomsComponent } from './hostel-rooms/hostel-rooms.component';
+import { DemoComponent } from './demo/demo.component';
 
 
 const routes: Routes = [
@@ -40,7 +41,8 @@ const routes: Routes = [
   { path:'books',component:BooksComponent},
   { path:'book-issued',component:BookIssuedComponent},
   { path:'transport-routes',component:TransportRoutesComponent},
-  { path:'hostel-rooms',component:HostelRoomsComponent}
+  { path:'hostel-rooms',component:HostelRoomsComponent},
+  { path:'', component:DemoComponent}
 ];
 
 @NgModule({

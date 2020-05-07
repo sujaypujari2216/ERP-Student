@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatatableService } from '../shared/datatable-service/datatable.service';
 
 @Component({
   selector: 'app-notice-board',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoticeBoardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private datatableservice:DatatableService) { }
 
   ngOnInit(): void {
+    this.datatableservice.initTable("Notice Board");
   }
-
 }
