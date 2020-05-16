@@ -42,7 +42,7 @@ const routes: Routes = [
   { path:'book-issued',component:BookIssuedComponent},
   { path:'transport-routes',component:TransportRoutesComponent},
   { path:'hostel-rooms',component:HostelRoomsComponent},
-  { path:'', component:DemoComponent}
+  { path:'', component:MyProfileComponent}
 ];
 
 @NgModule({

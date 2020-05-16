@@ -6,7 +6,6 @@ declare const $;
 })
 export class DatatableService {
   initTable(fileName:String):void {
-    console.log(fileName);
 
     $(function (){ 
 
